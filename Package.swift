@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.5
 
 //
 //  Package.swift
@@ -14,14 +14,14 @@ import PackageDescription
 
 let package = Package(
     name: "WS1IntelligenceSDK",
-    platforms: [.iOS(.v14)],
+    platforms: [.iOS(.v15)],
     products: [
         .library(
             name: "WS1IntelligenceSDK",
             targets: ["WS1IntelligenceSDK"]),
     ],
     targets: [
-        .binaryTarget(name: "WS1IntelligenceSDK", url: "", checksum:"7f8d2c1ec663d66ef392e93a8fed7df8521fd6ef23f26491126ecd2ef878e966")
+        .binaryTarget(name: "WS1IntelligenceSDK", url: "https://vmwaresaas.jfrog.io/artifactory/Workspace-ONE-Intelligence-SDK-iOS/24.1.0/WS1IntelligenceSDK.xcframework.zip", checksum:"442a35d8b80c0a39aa420a8412b56a7e7440bfa86230b668f08fd7c5d0fe2955")
     ]
 )
 
