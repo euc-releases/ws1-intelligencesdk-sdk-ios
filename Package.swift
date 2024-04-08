@@ -21,7 +21,7 @@ let package = Package(
             targets: ["WS1IntelligenceSDK"]),
     ],
     targets: [
-        .binaryTarget(name: "WS1IntelligenceSDK", url: "https://vmwaresaas.jfrog.io/artifactory/Workspace-ONE-Intelligence-SDK-iOS/24.1.0/WS1IntelligenceSDK.xcframework.zip", checksum:"442a35d8b80c0a39aa420a8412b56a7e7440bfa86230b668f08fd7c5d0fe2955")
+        .binaryTarget(name: "WS1IntelligenceSDK", url: "https://vmwaresaas.jfrog.io/artifactory/Workspace-ONE-Intelligence-SDK-iOS/24.3.0/WS1IntelligenceSDK.xcframework.zip", checksum:"359ba1e8db1a9b9112c06382c15f0229c68657353277b390686c867bd550d3ed")
     ]
 )
 
