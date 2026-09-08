@@ -14,17 +14,17 @@ import PackageDescription
 
 let package = Package(
     name: "WS1IntelligenceSDK",
-    platforms: [.iOS(.v16)],
+    platforms: [.iOS(.v17)],
     products: [
         .library(
             name: "WS1IntelligenceSDK",
             targets: ["OmnissaCryptoSDK", "WS1IntelligenceSDK"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/euc-releases/ws1-crypto-sdk.git", from: "25.06.0")
+        .package(url: "https://github.com/euc-releases/ws1-crypto-sdk.git", from: "26.06.0")
     ],
     targets: [
-        .binaryTarget(name: "WS1IntelligenceSDK", url: "https://github.com/euc-releases/ws1-intelligencesdk-sdk-ios/releases/download/26.5.1/WS1IntelligenceSDK.xcframework.zip", checksum: "3b14c21500f0a55a4639ea041ddd2c4b0067d01cd747f4fb9b176f76a6a5f970"),
+        .binaryTarget(name: "WS1IntelligenceSDK", url: "https://github.com/euc-releases/ws1-intelligencesdk-sdk-ios/releases/download/26.8.0/WS1IntelligenceSDK.xcframework.zip", checksum: "416879b2a31bd36684afc704d283ab89726ec8213cc55d28a8dde05249998659"),
         .target(name: "OmnissaCryptoSDK", dependencies: [.product(name: "WS1CryptoSDK", package: "ws1-crypto-sdk")])
     ]
 )
